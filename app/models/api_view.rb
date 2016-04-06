@@ -1,7 +1,16 @@
-class APIView < OpenStruct
+class APIView
+  attr_reader :name, :path
+  def initialize(view)
+    @name = view[:name]
+    @path = view[:path]
+  end
 
   def self.service(current_user)
     GithubService.new(current_user)
+  end
+
+  def post_issue(current_user, repo, view)
+    GithubService.new(current_user).post_issue(repo, view)
   end
 
   def self.all(current_user, repo)

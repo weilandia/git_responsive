@@ -2,7 +2,6 @@ class APIRepo
   attr_reader :name
   attr_accessor :views
   def initialize(repo, current_user)
-    require "pry"; binding.pry
     @name = repo[:name]
   end
 
@@ -20,5 +19,16 @@ class APIRepo
     repo = APIRepo.new(service(current_user).repo(name), current_user)
     repo.views = APIView.all(current_user, repo.name).compact
     repo
+  end
+  
+  def self.generate_issues(current_user, name)
+    repo = self.find(current_user, name)
+    repo.views.each do |view|
+      if view.class == Array
+        view.first.post_issue(current_user, repo.name, view.first.path)
+      else
+        view.post_issue(current_user, repo.name, view.path)
+      end
+    end
   end
 end

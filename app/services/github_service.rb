@@ -4,11 +4,10 @@ class GithubService
   def initialize(user)
     @user = user
     @_connection = Faraday.new("https://api.github.com")
-    connection.headers = {"Authorization" => "token #{@user.token}"}
+    connection.headers = {"Authorization" => "token #{@user.token}", "Content-Type" => "application/json"}
   end
 
   def get(path)
-    require "pry"; binding.pry
     parse(connection.get(path))
   end
 
