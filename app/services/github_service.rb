@@ -11,6 +11,12 @@ class GithubService
     parse(connection.get(path))
   end
 
+  def post(path, params)
+    require "pry"; binding.pry
+    params = params.to_json
+    parse(connection.post(path, params))
+  end
+
 private
   def parse(response)
     JSON.parse(response.body, symbolize_names: true)

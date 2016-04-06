@@ -5,6 +5,8 @@ class ApiReposController < ApplicationController
 
   def create
     APIRepo.generate_issues(current_user, repo_params[:name])
+
+    redirect_to user_apirepo_path(current_user, repo_params[:name])
   end
 
 private

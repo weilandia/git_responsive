@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
   def create
     user_info = request.env["omniauth.auth"]
-    require "pry"; binding.pry
     if user = User.from_omniauth(user_info)
       session[:user_id] = user.id
       session[:user_info] = user_info

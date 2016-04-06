@@ -15,7 +15,7 @@ module GithubViews
     {
       "title": "Is #{view} responsive?",
       "body": "Make sure it is!",
-      "assignee": "GitResponsive",
+      "assignee": "#{@user.nickname}",
       "labels": [
         "enhancement"
       ]
