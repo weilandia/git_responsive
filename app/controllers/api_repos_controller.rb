@@ -3,6 +3,12 @@ class ApiReposController < ApplicationController
     @repo = APIRepo.find(current_user, repo_params[:name])
   end
 
+  def create
+    APIRepo.generate_issues(current_user, repo_params[:name])
+
+    redirect_to user_apirepo_path(current_user, repo_params[:name])
+  end
+
 private
   def repo_params
     params.permit(:name)
