@@ -1,0 +1,25 @@
+<div id="<%= @repo.name %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="<%= @repo.name %>-heading">
+  <div class="panel-body">
+    <table class="table table-striped">
+      <tbody>
+      <% @repo.views.each do |view| %>
+          <% if view.class == Array %>
+            <% view.each do |v| %>
+            <tr>
+              <td>
+                <%= v.path %>
+              </td>
+            </tr>
+            <% end %>
+          <% else %>
+          <tr>
+            <td>
+              <%= view.path %>
+            </td>
+          </tr>
+          <% end %>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

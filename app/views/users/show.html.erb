@@ -1,0 +1,14 @@
+<div class="container">
+  <% @repos.each do |repo| %>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="<%= repo.name %>-heading">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#<%= repo.name %>" aria-expanded="true" aria-controls="<%= repo.name %>">
+              <%= link_to repo.name, user_apirepo_path(current_user.nickname, repo.name) %>
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  <% end %>

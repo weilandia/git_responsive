@@ -1,0 +1,39 @@
+<div class="container">
+  <% if @repo.views %>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="<%= @repo.name %>-heading">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#<%= @repo.name %>" aria-expanded="true" aria-controls="<%= @repo.name %>">
+              <%= @repo.name %>
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div id="<%= @repo.name %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="<%= @repo.name %>-heading">
+      <div class="panel-body">
+        <table class="table table-striped">
+          <tbody>
+          <% @repo.views.each do |view| %>
+              <% if view.class == Array %>
+                <% view.each do |v| %>
+                <tr>
+                  <td>
+                    <%= v.path %>
+                  </td>
+                </tr>
+                <% end %>
+              <% else %>
+              <tr>
+                <td>
+                  <%= view.path %>
+                </td>
+              </tr>
+              <% end %>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <% end %>

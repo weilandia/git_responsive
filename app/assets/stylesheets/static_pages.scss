@@ -1,0 +1,28 @@
+.landing-jumbo-one {
+  margin-top: -5px;
+  padding-bottom: 100px;
+  color:#DADFE1;
+  background-color: #2574A9;
+  h1 {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+  h3 {
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .btn-signin {
+    font-weight: 300;
+    background-color: #6C7A89;
+  }
+
+  .btn-signin:hover {
+    color: #DADFE1;
+    background-color: #67809F;
+  }
+
+  .btn-signin:focus {
+    color: #DADFE1;
+    outline-width: 0;
+  }
+}
