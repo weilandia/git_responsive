@@ -6,4 +6,8 @@ module GithubRepos
   def repo(name)
     get("repos/#{@user.nickname}/#{name}")
   end
+
+  def issues(repo)
+    get("/repos/#{@user.nickname}/#{repo}/issues")
+  end
 end
