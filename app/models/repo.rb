@@ -28,3 +28,27 @@ class Repo < ActiveRecord::Base
     [self, update_count]
   end
 end
+
+class UpdatedRepo < SimpleDelegator
+  def initialize(repo, apirepo_views)
+    super(repo)
+  end
+
+  def update_count
+    update_count = 0
+    apirepo.views.flatten.each { |view|
+      if views.find_by(name: view.name)
+        if !views.find_by(sha: view.sha) && APIIssue.reject?(current_user, apirepo.name, view)
+          views.find_by(name: view.name).update(sha: view.sha)
+          view.post_issue(current_user, self.name, view.path)
+          update_count += 1
+        end
+      else
+        views.new(name: view.name, path: view.path, sha: view.sha)
+        view.post_issue(current_user, self.name, view.path)
+        update_count += 1
+      end
+    }
+    update_count
+  end
+end

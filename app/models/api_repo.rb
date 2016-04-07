@@ -1,3 +1,31 @@
+class ApiRepoSaver
+  def initialize(user, repo)
+    @_user = user
+    @_repo = repo
+  end
+
+    def save
+      user.repos.create(name: self.name) do |r|
+        repo.views.flatten.each { |view|
+          r.views.new(name: view.name, path: view.path, sha: view.sha)
+        }
+
+      end
+
+
+      repo = user.repos.new(name: self.name)
+      views.flatten.each { |view|
+        repo.views.new(name: view.name, path: view.path, sha: view.sha)
+      }
+      repo
+    end
+
+    private
+    def user
+      @_user
+    end
+end
+
 class APIRepo
   attr_reader :name
   attr_accessor :views

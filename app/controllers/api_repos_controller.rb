@@ -6,7 +6,8 @@ class ApiReposController < ApplicationController
   def create
     repo = APIRepo.generate_issues(current_user, repo_params[:name])
     db_repo = repo.save_to_db(current_user)
-    if db_repo.views.length != 0
+    repo_saver = ApiRepoSaver.new(current_user, repo)
+    if repo_saver.save
       db_repo.save
       flash[:info] = "#{db_repo.views.count} responsiveness reminders have been created."
       redirect_to user_path(current_user.nickname)
