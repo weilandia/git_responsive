@@ -14,6 +14,7 @@ gem 'puma'
 gem 'figaro'
 gem "omniauth-github"
 gem 'faraday'
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pry-rails'
