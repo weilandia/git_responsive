@@ -1,8 +1,9 @@
 class APIView
-  attr_reader :name, :path
+  attr_reader :name, :path, :sha
   def initialize(view)
     @name = view[:name]
     @path = view[:path]
+    @sha = view[:sha]
   end
 
   def self.service(current_user)

@@ -12,7 +12,6 @@ class GithubService
   end
 
   def post(path, params)
-    require "pry"; binding.pry
     params = params.to_json
     parse(connection.post(path, params))
   end

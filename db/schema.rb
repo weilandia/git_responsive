@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406210843) do
+ActiveRecord::Schema.define(version: 20160407011146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "repos", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "sha"
+  end
+
+  add_index "repos", ["user_id"], name: "index_repos_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
@@ -27,4 +37,17 @@ ActiveRecord::Schema.define(version: 20160406210843) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "views", force: :cascade do |t|
+    t.integer  "repo_id"
+    t.string   "path"
+    t.string   "name"
+    t.string   "sha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "views", ["repo_id"], name: "index_views_on_repo_id", using: :btree
+
+  add_foreign_key "repos", "users"
+  add_foreign_key "views", "repos"
 end

@@ -3,6 +3,9 @@
   <%= render partial: "shared/head" %>
   <body>
     <%= render partial: "shared/nav" %>
+    <% flash.each do |type, message| %>
+      <%= content_tag :div, sanitize(message), class: "alert alert_#{type}" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get 'sessions/destroy', as: :signout
 
   resource :users, as: :user, path: ":username", only: [:show] do
-    resource :api_repos, as: :apirepo, path: ":name", only: [:index, :show, :create]
+    resource :api_repos, as: :apirepo, path: ":name", only: [:index, :show, :create, :update]
   end
 end
