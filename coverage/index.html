@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-07T16:35:04-06:00">2016-04-07T16:35:04-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-07T17:11:40-06:00">2016-04-07T17:11:40-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.59%</span></span>
+    (<span class="covered_percent"><span class="green">95.86%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.26
+         4.1
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>30</b> files in total.
-    <b>264</b> relevant lines. 
+    <b>266</b> relevant lines. 
     <span class="green"><b>255</b> lines covered</span> and
-    <span class="red"><b>9</b> lines missed </span>
+    <span class="red"><b>11</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#247ec0221ea88e5fd8193c9d2a1843a78210baa3" class="src_link" title="app/models/api_repo.rb">app/models/api_repo.rb</a></td>
-        <td class="green strong">96.55 %</td>
-        <td>49</td>
-        <td>29</td>
+        <td class="green strong">90.32 %</td>
+        <td>53</td>
+        <td>31</td>
         <td>28</td>
-        <td>1</td>
-        <td>10.0</td>
+        <td>3</td>
+        <td>9.3</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>17</td>
         <td>16</td>
         <td>1</td>
-        <td>11.8</td>
+        <td>11.6</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>17</td>
         <td>17</td>
         <td>0</td>
-        <td>20.1</td>
+        <td>18.7</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>7.4</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -645,11 +645,11 @@
         <div class="source_table" id="247ec0221ea88e5fd8193c9d2a1843a78210baa3">
   <div class="header">
     <h3>app/models/api_repo.rb</h3>
-    <h4><span class="green">96.55 %</span> covered</h4>
+    <h4><span class="green">90.32 %</span> covered</h4>
     <div>
-      <b>29</b> relevant lines. 
+      <b>31</b> relevant lines. 
       <span class="green"><b>28</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -881,61 +881,61 @@
         <li class="covered" data-hits="3" data-linenumber="38">
           <span class="hits">3</span>
           
-          <code class="ruby">        view.first.post_issue(current_user, repo.name, view.first.path)</code>
+          <code class="ruby">        if view.first.class == Array</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="missed" data-hits="0" data-linenumber="39">
           
           
-          <code class="ruby">      else</code>
+          <code class="ruby">          view.each do |v|</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="40">
-          <span class="hits">18</span>
+        <li class="missed" data-hits="0" data-linenumber="40">
           
-          <code class="ruby">        view.post_issue(current_user, repo.name, view.path)</code>
+          
+          <code class="ruby">            v.post_issue(current_user, repo.name, v.path)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">          end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="43">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="43">
           
-          <code class="ruby">    repo</code>
+          
+          <code class="ruby">      else</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="covered" data-hits="18" data-linenumber="44">
+          <span class="hits">18</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">        view.post_issue(current_user, repo.name, view.path)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="46">
           
-          <code class="ruby">  def self.refresh_issues(current_user, name)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="covered" data-hits="4" data-linenumber="47">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">    self.find(current_user, name)</code>
+          <code class="ruby">    repo</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
@@ -945,6 +945,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.refresh_issues(current_user, name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">    self.find(current_user, name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">end</code>
@@ -1046,8 +1070,8 @@
           <code class="ruby">  def post_issue(current_user, repo, view)</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="14">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="22" data-linenumber="14">
+          <span class="hits">22</span>
           
           <code class="ruby">    GithubService.new(current_user).post_issue(repo, view)</code>
         </li>
@@ -1622,20 +1646,20 @@
           <code class="ruby">  def initialize(user)</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="5">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="41" data-linenumber="5">
+          <span class="hits">41</span>
           
           <code class="ruby">    @user = user</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="6">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="41" data-linenumber="6">
+          <span class="hits">41</span>
           
           <code class="ruby">    @_connection = Faraday.new(&quot;https://api.github.com&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="7">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="41" data-linenumber="7">
+          <span class="hits">41</span>
           
           <code class="ruby">    connection.headers = {&quot;Authorization&quot; =&gt; &quot;token #{@user.token}&quot;, &quot;Content-Type&quot; =&gt; &quot;application/json&quot;}</code>
         </li>
@@ -1682,14 +1706,14 @@
           <code class="ruby">  def post(path, params)</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="15">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="22" data-linenumber="15">
+          <span class="hits">22</span>
           
           <code class="ruby">    params = params.to_json</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="16">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="22" data-linenumber="16">
+          <span class="hits">22</span>
           
           <code class="ruby">    parse(connection.post(path, params))</code>
         </li>
@@ -1718,8 +1742,8 @@
           <code class="ruby">  def parse(response)</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="21">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="41" data-linenumber="21">
+          <span class="hits">41</span>
           
           <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
         </li>
@@ -1742,8 +1766,8 @@
           <code class="ruby">  def connection</code>
         </li>
       
-        <li class="covered" data-hits="88" data-linenumber="25">
-          <span class="hits">88</span>
+        <li class="covered" data-hits="82" data-linenumber="25">
+          <span class="hits">82</span>
           
           <code class="ruby">    @_connection</code>
         </li>
@@ -1838,8 +1862,8 @@
           <code class="ruby">  def post_issue(repo, view)</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="11">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="22" data-linenumber="11">
+          <span class="hits">22</span>
           
           <code class="ruby">    post(&quot;/repos/#{@user.nickname}/#{repo}/issues&quot;, issue_params(view))</code>
         </li>
@@ -1898,8 +1922,8 @@
           <code class="ruby">      ]</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="21">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="22" data-linenumber="21">
+          <span class="hits">22</span>
           
           <code class="ruby">    }</code>
         </li>

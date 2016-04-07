@@ -35,7 +35,9 @@ class APIRepo
     repo = self.find(current_user, name)
     repo.views.each do |view|
       if view.class == Array
-        view.first.post_issue(current_user, repo.name, view.first.path)
+        view.each do |v|
+          v.post_issue(current_user, repo.name, v.path)
+        end
       else
         view.post_issue(current_user, repo.name, view.path)
       end
