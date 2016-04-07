@@ -1,7 +1,7 @@
 require 'digest/sha1'
 class Repo < ActiveRecord::Base
   belongs_to :user
-  has_many :views
+  has_many :views, dependent: :destroy
   before_validation :generate_sha
 
   validates :sha, uniqueness: true

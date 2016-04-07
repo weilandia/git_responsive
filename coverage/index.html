@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-07T13:59:28-06:00">2016-04-07T13:59:28-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-07T16:35:04-06:00">2016-04-07T16:35:04-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -1187,7 +1187,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :views</code>
+          <code class="ruby">  has_many :views, dependent: :destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -1373,7 +1373,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :repos</code>
+          <code class="ruby">  has_many :repos, dependent: :destroy</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -1817,7 +1817,7 @@
         <li class="covered" data-hits="7" data-linenumber="7">
           <span class="hits">7</span>
           
-          <code class="ruby">    get(&quot;/repos/weilandia/#{repo}/contents/app/views/#{view_sub_dir}?ref=master&quot;)</code>
+          <code class="ruby">    get(&quot;/repos/#{@user.nickname}/#{repo}/contents/app/views/#{view_sub_dir}?ref=master&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">

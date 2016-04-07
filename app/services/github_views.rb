@@ -4,7 +4,7 @@ module GithubViews
   end
 
   def views(view_sub_dir, repo)
-    get("/repos/weilandia/#{repo}/contents/app/views/#{view_sub_dir}?ref=master")
+    get("/repos/#{@user.nickname}/#{repo}/contents/app/views/#{view_sub_dir}?ref=master")
   end
 
   def post_issue(repo, view)

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :repos
+  has_many :repos, dependent: :destroy
 
   def self.from_omniauth(auth)
     where(uid: auth[:uid], provider: auth[:provider]).first_or_create do |user|
