@@ -6,11 +6,13 @@ class ApiReposController < ApplicationController
   def create
     repo = APIRepo.generate_issues(current_user, repo_params[:name])
     db_repo = repo.save_to_db(current_user)
-    require "pry"; binding.pry
-    if db_repo.save
+    if db_repo.views.length != 0
+      db_repo.save
       flash[:info] = "#{db_repo.views.count} responsiveness reminders have been created."
       redirect_to user_path(current_user.nickname)
     else
+      flash[:info] = "No views for #{db_repo.name} were found :(.  No reminders created."
+      redirect_to user_path(current_user.nickname)
     end
   end
 

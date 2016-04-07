@@ -1,32 +1,40 @@
 <div class="container">
-  <table class="table table-responsive table-hover">
-    <% @repos.each_with_object do |repo| %>
-      <tr>
-        <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'put' do %>
-        <td>
-          <%= repo.name %>
-          <span class="float-right">
-            <%= submit_tag "refresh responsiveness issues", class:"btn btn-primary btn-xs" %>
-          </span>
-        </td>
-        <% end %>
-      </tr>
-    <% end %>
-  </table>
-  <table class="table table-responsive table-hover">
-    <% @apirepos.each do |repo| %>
-      <% if Repo.find_by(name: repo.name).nil? %>
-        <tr>
-          <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'post' do %>
-          <td>
-            <%= repo.name %>
-            <span class="float-right">
-              <%= submit_tag "generate responsiveness issues", class:"btn btn-primary btn-xs" %>
-            </span>
-          </td>
-          <% end %>
-        </tr>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <div class="instructions">
+        <h5>Add rails repos to remind yourself to make everything responsive. Views with be marked with a GitHub issue reminder to give you a responsiveness checklist.</h5>
+
+      </div>
+      <% if !current_user.repos.empty? %>
+        <div class="panel panel-default">
+          <h5 class="light checked-repos-header">Already checked:</h5>
+          <table class="table table-responsive table-hover">
+            <% current_user.repos.each do |repo| %>
+              <tr>
+                <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'put' do %>
+                <td>
+                  <%= repo.name %>
+                  <span class="float-right">
+                    <%= submit_tag "refresh responsiveness issues", class:"btn btn-primary btn-xs" %>
+                  </span>
+                </td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+        </div>
       <% end %>
-    <% end %>
-  </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <h5 class="light">Add repos:</h5>
+      <%= form_tag user_apirepos_path(current_user.nickname), method: 'post' do %>
+        <%= select_tag "name", options_for_select( @apirepos.map(&:name)), {class: "form-control form-control-sm dropdown-margin"} %>
+        <span class="float-right">
+          <%= submit_tag "generate responsiveness issues", class:"btn btn-already btn-xs" %>
+        </span>
+      <% end %>
+    </div>
+  </div>
 </div>

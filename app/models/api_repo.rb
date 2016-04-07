@@ -17,10 +17,12 @@ class APIRepo
     GithubService.new(current_user)
   end
 
-  def self.all(current_user)
+  def self.new_repos(current_user)
     service(current_user).repos.map do |repo|
-      APIRepo.new(repo, current_user)
-    end
+      if Repo.find_by(name: repo[:name]).nil?
+        APIRepo.new(repo, current_user)
+      end
+    end.flatten.compact
   end
 
   def self.find(current_user, name)
