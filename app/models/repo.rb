@@ -16,12 +16,12 @@ class Repo < ActiveRecord::Base
       if views.find_by(name: view.name)
         if !views.find_by(sha: view.sha)
           views.find_by(name: view.name).update(sha: view.sha)
-          view.post_issue(current_user, repo.name, view.first.path)
+          view.post_issue(current_user, self.name, view.first.path)
           update_count += 1
         end
       else
         views.new(name: view.name, path: view.path, sha: view.sha)
-        view.post_issue(current_user, repo.name, view.first.path)
+        view.post_issue(current_user, self.name, view.first.path)
         update_count += 1
       end
     }
