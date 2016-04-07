@@ -1,0 +1,572 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/weilandia/1511_task_manager
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4918'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"16a933a2c389ba521353c98b02c1d9fc"
+      Last-Modified:
+      - Thu, 04 Feb 2016 18:56:21 GMT
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - b0ef53392caa42315c6206737946d931
+      X-Github-Request-Id:
+      - 3F910F63:76D3:251152E:5705E105
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":51097711,"name":"1511_task_manager","full_name":"weilandia/1511_task_manager","owner":{"login":"weilandia","id":13652979,"avatar_url":"https://avatars.githubusercontent.com/u/13652979?v=3","gravatar_id":"","url":"https://api.github.com/users/weilandia","html_url":"https://github.com/weilandia","followers_url":"https://api.github.com/users/weilandia/followers","following_url":"https://api.github.com/users/weilandia/following{/other_user}","gists_url":"https://api.github.com/users/weilandia/gists{/gist_id}","starred_url":"https://api.github.com/users/weilandia/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/weilandia/subscriptions","organizations_url":"https://api.github.com/users/weilandia/orgs","repos_url":"https://api.github.com/users/weilandia/repos","events_url":"https://api.github.com/users/weilandia/events{/privacy}","received_events_url":"https://api.github.com/users/weilandia/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/weilandia/1511_task_manager","description":null,"fork":true,"url":"https://api.github.com/repos/weilandia/1511_task_manager","forks_url":"https://api.github.com/repos/weilandia/1511_task_manager/forks","keys_url":"https://api.github.com/repos/weilandia/1511_task_manager/keys{/key_id}","collaborators_url":"https://api.github.com/repos/weilandia/1511_task_manager/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/weilandia/1511_task_manager/teams","hooks_url":"https://api.github.com/repos/weilandia/1511_task_manager/hooks","issue_events_url":"https://api.github.com/repos/weilandia/1511_task_manager/issues/events{/number}","events_url":"https://api.github.com/repos/weilandia/1511_task_manager/events","assignees_url":"https://api.github.com/repos/weilandia/1511_task_manager/assignees{/user}","branches_url":"https://api.github.com/repos/weilandia/1511_task_manager/branches{/branch}","tags_url":"https://api.github.com/repos/weilandia/1511_task_manager/tags","blobs_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/refs{/sha}","trees_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/trees{/sha}","statuses_url":"https://api.github.com/repos/weilandia/1511_task_manager/statuses/{sha}","languages_url":"https://api.github.com/repos/weilandia/1511_task_manager/languages","stargazers_url":"https://api.github.com/repos/weilandia/1511_task_manager/stargazers","contributors_url":"https://api.github.com/repos/weilandia/1511_task_manager/contributors","subscribers_url":"https://api.github.com/repos/weilandia/1511_task_manager/subscribers","subscription_url":"https://api.github.com/repos/weilandia/1511_task_manager/subscription","commits_url":"https://api.github.com/repos/weilandia/1511_task_manager/commits{/sha}","git_commits_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/commits{/sha}","comments_url":"https://api.github.com/repos/weilandia/1511_task_manager/comments{/number}","issue_comment_url":"https://api.github.com/repos/weilandia/1511_task_manager/issues/comments{/number}","contents_url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/{+path}","compare_url":"https://api.github.com/repos/weilandia/1511_task_manager/compare/{base}...{head}","merges_url":"https://api.github.com/repos/weilandia/1511_task_manager/merges","archive_url":"https://api.github.com/repos/weilandia/1511_task_manager/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/weilandia/1511_task_manager/downloads","issues_url":"https://api.github.com/repos/weilandia/1511_task_manager/issues{/number}","pulls_url":"https://api.github.com/repos/weilandia/1511_task_manager/pulls{/number}","milestones_url":"https://api.github.com/repos/weilandia/1511_task_manager/milestones{/number}","notifications_url":"https://api.github.com/repos/weilandia/1511_task_manager/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/weilandia/1511_task_manager/labels{/name}","releases_url":"https://api.github.com/repos/weilandia/1511_task_manager/releases{/id}","deployments_url":"https://api.github.com/repos/weilandia/1511_task_manager/deployments","created_at":"2016-02-04T18:56:20Z","updated_at":"2016-02-04T18:56:21Z","pushed_at":"2016-02-04T18:52:18Z","git_url":"git://github.com/weilandia/1511_task_manager.git","ssh_url":"git@github.com:weilandia/1511_task_manager.git","clone_url":"https://github.com/weilandia/1511_task_manager.git","svn_url":"https://github.com/weilandia/1511_task_manager","homepage":null,"size":9,"stargazers_count":0,"watchers_count":0,"language":"Ruby","has_issues":false,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":0,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"parent":{"id":51023835,"name":"1511_task_manager","full_name":"rwarbelow/1511_task_manager","owner":{"login":"rwarbelow","id":3311609,"avatar_url":"https://avatars.githubusercontent.com/u/3311609?v=3","gravatar_id":"","url":"https://api.github.com/users/rwarbelow","html_url":"https://github.com/rwarbelow","followers_url":"https://api.github.com/users/rwarbelow/followers","following_url":"https://api.github.com/users/rwarbelow/following{/other_user}","gists_url":"https://api.github.com/users/rwarbelow/gists{/gist_id}","starred_url":"https://api.github.com/users/rwarbelow/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rwarbelow/subscriptions","organizations_url":"https://api.github.com/users/rwarbelow/orgs","repos_url":"https://api.github.com/users/rwarbelow/repos","events_url":"https://api.github.com/users/rwarbelow/events{/privacy}","received_events_url":"https://api.github.com/users/rwarbelow/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/rwarbelow/1511_task_manager","description":null,"fork":false,"url":"https://api.github.com/repos/rwarbelow/1511_task_manager","forks_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/forks","keys_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/keys{/key_id}","collaborators_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/teams","hooks_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/hooks","issue_events_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues/events{/number}","events_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/events","assignees_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/assignees{/user}","branches_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/branches{/branch}","tags_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/tags","blobs_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/refs{/sha}","trees_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/trees{/sha}","statuses_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/statuses/{sha}","languages_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/languages","stargazers_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/stargazers","contributors_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/contributors","subscribers_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/subscribers","subscription_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/subscription","commits_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/commits{/sha}","git_commits_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/commits{/sha}","comments_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/comments{/number}","issue_comment_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues/comments{/number}","contents_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/contents/{+path}","compare_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/compare/{base}...{head}","merges_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/merges","archive_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/downloads","issues_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues{/number}","pulls_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/pulls{/number}","milestones_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/milestones{/number}","notifications_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/labels{/name}","releases_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/releases{/id}","deployments_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/deployments","created_at":"2016-02-03T19:16:23Z","updated_at":"2016-02-03T19:16:25Z","pushed_at":"2016-02-05T03:52:52Z","git_url":"git://github.com/rwarbelow/1511_task_manager.git","ssh_url":"git@github.com:rwarbelow/1511_task_manager.git","clone_url":"https://github.com/rwarbelow/1511_task_manager.git","svn_url":"https://github.com/rwarbelow/1511_task_manager","homepage":null,"size":15,"stargazers_count":0,"watchers_count":0,"language":"Ruby","has_issues":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":4,"mirror_url":null,"open_issues_count":0,"forks":4,"open_issues":0,"watchers":0,"default_branch":"master"},"source":{"id":51023835,"name":"1511_task_manager","full_name":"rwarbelow/1511_task_manager","owner":{"login":"rwarbelow","id":3311609,"avatar_url":"https://avatars.githubusercontent.com/u/3311609?v=3","gravatar_id":"","url":"https://api.github.com/users/rwarbelow","html_url":"https://github.com/rwarbelow","followers_url":"https://api.github.com/users/rwarbelow/followers","following_url":"https://api.github.com/users/rwarbelow/following{/other_user}","gists_url":"https://api.github.com/users/rwarbelow/gists{/gist_id}","starred_url":"https://api.github.com/users/rwarbelow/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rwarbelow/subscriptions","organizations_url":"https://api.github.com/users/rwarbelow/orgs","repos_url":"https://api.github.com/users/rwarbelow/repos","events_url":"https://api.github.com/users/rwarbelow/events{/privacy}","received_events_url":"https://api.github.com/users/rwarbelow/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/rwarbelow/1511_task_manager","description":null,"fork":false,"url":"https://api.github.com/repos/rwarbelow/1511_task_manager","forks_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/forks","keys_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/keys{/key_id}","collaborators_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/teams","hooks_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/hooks","issue_events_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues/events{/number}","events_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/events","assignees_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/assignees{/user}","branches_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/branches{/branch}","tags_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/tags","blobs_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/refs{/sha}","trees_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/trees{/sha}","statuses_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/statuses/{sha}","languages_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/languages","stargazers_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/stargazers","contributors_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/contributors","subscribers_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/subscribers","subscription_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/subscription","commits_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/commits{/sha}","git_commits_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/git/commits{/sha}","comments_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/comments{/number}","issue_comment_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues/comments{/number}","contents_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/contents/{+path}","compare_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/compare/{base}...{head}","merges_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/merges","archive_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/downloads","issues_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/issues{/number}","pulls_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/pulls{/number}","milestones_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/milestones{/number}","notifications_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/labels{/name}","releases_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/releases{/id}","deployments_url":"https://api.github.com/repos/rwarbelow/1511_task_manager/deployments","created_at":"2016-02-03T19:16:23Z","updated_at":"2016-02-03T19:16:25Z","pushed_at":"2016-02-05T03:52:52Z","git_url":"git://github.com/rwarbelow/1511_task_manager.git","ssh_url":"git@github.com:rwarbelow/1511_task_manager.git","clone_url":"https://github.com/rwarbelow/1511_task_manager.git","svn_url":"https://github.com/rwarbelow/1511_task_manager","homepage":null,"size":15,"stargazers_count":0,"watchers_count":0,"language":"Ruby","has_issues":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":4,"mirror_url":null,"open_issues_count":0,"forks":4,"open_issues":0,"watchers":0,"default_branch":"master"},"network_count":4,"subscribers_count":1}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:37 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views?ref=master
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4917'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"32827b739b39836232ef53f470fae43c"
+      Last-Modified:
+      - Thu, 04 Feb 2016 18:56:21 GMT
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 3e3b9690823fb031da84658eb58aa83b
+      X-Github-Request-Id:
+      - 3F910F63:76D5:3955318:5705E105
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"dashboard.erb","path":"app/views/dashboard.erb","sha":"adf748be4af0764e22e170fec19ff73e12dac665","size":137,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/dashboard.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/dashboard.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/adf748be4af0764e22e170fec19ff73e12dac665","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/dashboard.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/dashboard.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/adf748be4af0764e22e170fec19ff73e12dac665","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/dashboard.erb"}},{"name":"edit.erb","path":"app/views/edit.erb","sha":"dd7fc1cc99784915410119d928c30b9cd4e8d045","size":395,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/edit.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/edit.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/dd7fc1cc99784915410119d928c30b9cd4e8d045","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/edit.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/edit.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/dd7fc1cc99784915410119d928c30b9cd4e8d045","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/edit.erb"}},{"name":"error.erb","path":"app/views/error.erb","sha":"428b8fb8342b10e686d8f3eec76a3a82971ea576","size":395,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/error.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/error.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/428b8fb8342b10e686d8f3eec76a3a82971ea576","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/error.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/error.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/428b8fb8342b10e686d8f3eec76a3a82971ea576","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/error.erb"}},{"name":"index.erb","path":"app/views/index.erb","sha":"63c4aaabe535e1446668d31d3f983b8c200e6f61","size":400,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/index.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/index.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/63c4aaabe535e1446668d31d3f983b8c200e6f61","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/index.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/index.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/63c4aaabe535e1446668d31d3f983b8c200e6f61","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/index.erb"}},{"name":"new.erb","path":"app/views/new.erb","sha":"d4e775c51d6fcf9ae31c6aaa5c1928376a7159de","size":214,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/new.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/new.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/d4e775c51d6fcf9ae31c6aaa5c1928376a7159de","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/new.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/new.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/d4e775c51d6fcf9ae31c6aaa5c1928376a7159de","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/new.erb"}},{"name":"show.erb","path":"app/views/show.erb","sha":"59ad332d221c4c8d1af115d03236fe40e3a341ca","size":94,"url":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/show.erb?ref=master","html_url":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/show.erb","git_url":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/59ad332d221c4c8d1af115d03236fe40e3a341ca","download_url":"https://raw.githubusercontent.com/weilandia/1511_task_manager/master/app/views/show.erb","type":"file","_links":{"self":"https://api.github.com/repos/weilandia/1511_task_manager/contents/app/views/show.erb?ref=master","git":"https://api.github.com/repos/weilandia/1511_task_manager/git/blobs/59ad332d221c4c8d1af115d03236fe40e3a341ca","html":"https://github.com/weilandia/1511_task_manager/blob/master/app/views/show.erb"}}]'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:37 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/dashboard.erb responsive?","body":"Make sure
+        it is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4916'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D4:2F61D97:5705E105
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:38 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/edit.erb responsive?","body":"Make sure it is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4915'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D6:3F6658E:5705E106
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:38 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/error.erb responsive?","body":"Make sure it
+        is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4914'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D6:3F665C8:5705E106
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:38 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/index.erb responsive?","body":"Make sure it
+        is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4913'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D0:C9394B:5705E106
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:38 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/new.erb responsive?","body":"Make sure it is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4912'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D7:23E91F0:5705E106
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:39 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/weilandia/1511_task_manager/issues
+    body:
+      encoding: UTF-8
+      string: '{"title":"Is app/views/show.erb responsive?","body":"Make sure it is!","labels":["enhancement"]}'
+    headers:
+      Authorization:
+      - token ee78e9ce366f546089f58aefe45c5afd296d4967
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Apr 2016 04:24:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
+      Status:
+      - 410 Gone
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4911'
+      X-Ratelimit-Reset:
+      - '1460004871'
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 2e68d608b599215fe919
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - 3F910F63:76D6:3F666A2:5705E107
+    body:
+      encoding: UTF-8
+      string: '{"message":"Issues are disabled for this repo","documentation_url":"https://developer.github.com/v3/issues/"}'
+    http_version: 
+  recorded_at: Thu, 07 Apr 2016 04:24:39 GMT
+recorded_with: VCR 3.0.1
