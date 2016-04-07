@@ -1,16 +1,32 @@
 <div class="container">
   <table class="table table-responsive table-hover">
-    <% @repos.each do |repo| %>
-    <tr>
-      <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'post' do %>
-      <td>
-        <%= repo.name %>
-        <span class="float-right">
-          <%= submit_tag "generate responsiveness issues", class:"btn btn-primary btn-xs" %>
-        </span>
-      </td>
+    <% @repos.each_with_object do |repo| %>
+      <tr>
+        <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'put' do %>
+        <td>
+          <%= repo.name %>
+          <span class="float-right">
+            <%= submit_tag "refresh responsiveness issues", class:"btn btn-primary btn-xs" %>
+          </span>
+        </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+  <table class="table table-responsive table-hover">
+    <% @apirepos.each do |repo| %>
+      <% if Repo.find_by(name: repo.name).nil? %>
+        <tr>
+          <%= form_tag user_apirepo_path(current_user.nickname, repo.name), method: 'post' do %>
+          <td>
+            <%= repo.name %>
+            <span class="float-right">
+              <%= submit_tag "generate responsiveness issues", class:"btn btn-primary btn-xs" %>
+            </span>
+          </td>
+          <% end %>
+        </tr>
       <% end %>
-    </tr>
     <% end %>
   </table>
 </div>
