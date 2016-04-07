@@ -28,6 +28,7 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'launchy'
+  gem 'simplecov', :require => false
 end
 
 group :development do

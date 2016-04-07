@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 module Omniauth
   def stub_omniauth
   OmniAuth.config.test_mode = true
