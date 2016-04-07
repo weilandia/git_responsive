@@ -18,7 +18,7 @@ class ApiReposController < ApplicationController
 
   def update
     apirepo = APIRepo.refresh_issues(current_user, repo_params[:name])
-    repo, update_count = Repo.find_by(repo_params).refresh_issues(apirepo)
+    repo, update_count = Repo.find_by(repo_params).refresh_issues(apirepo, current_user)
     if repo.save
       flash[:info] = "#{update_count} responsiveness reminders have been created."
       redirect_to user_path(current_user.nickname)
