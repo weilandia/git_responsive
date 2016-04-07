@@ -11,7 +11,6 @@ class Repo < ActiveRecord::Base
   end
 
   def refresh_issues(apirepo, current_user)
-    require "pry"; binding.pry
     update_count = 0
     apirepo.views.flatten.each { |view|
       if views.find_by(name: view.name)
